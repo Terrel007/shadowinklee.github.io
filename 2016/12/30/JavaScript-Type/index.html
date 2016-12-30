@@ -110,7 +110,7 @@
 <meta property="og:site_name" content="Alvin's Bolg">
 <meta property="og:description" content="JavaScrip中的数据类型分为两类：原始类型(primitive type)和对象类型(object type)。
 原始类型包括数字(number),字符串(string),布尔值(boolean),null,undefined。对象类型包括普通对象和内置对象(包装对象String,Number,Boolean;Array,Function,Date,RegExp,全局对象Math,JSON)">
-<meta property="og:updated_time" content="2016-12-30T06:05:10.614Z">
+<meta property="og:updated_time" content="2016-12-30T06:30:30.745Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript中的类型转换">
 <meta name="twitter:description" content="JavaScrip中的数据类型分为两类：原始类型(primitive type)和对象类型(object type)。
@@ -429,20 +429,20 @@
 <p>“&lt;”,”!=”等关系运算符应用到对象到原始值的转换时，任何对象都会首先尝试调用<code>valueOf()</code>，然后调用<code>toString()</code>。不管得到的原始值是否直接使用，它都不会进一步被转换成数字或字符串。</p>
 <p>“-“运算符把它的两个操作数都转换为数字。</p>
 <p><strong>示例:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[]+&#123;&#125; //返回&quot;[object Object]&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[]+&#123;&#125; <span class="comment">//返回"[object Object]"</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>[]调用<code>valueOf()</code>方法返回[]本身，不是原始值，调用<code>toString()</code>返回””,<br>{}调用<code>valueOf()</code>方法返回{}本身，不是原始值，调用<code>toString()</code>返回”[object Object]”</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&#125;+[] //返回0</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&#125;+[] <span class="comment">//返回0</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>{}被JavaScript引擎解析为语句块，因此表达式相当于+[],将[]操作数转换为数字，先调用<code>valueOf()</code>方法返回自身，不是原始值，再调用<code>toString()</code>方法，返回””，是原始值，转换为数字类型为0。</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(&#123;&#125;+[]) //返回&quot;[object Object]&quot;</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1+[]  //返回&quot;1&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(&#123;&#125;+[]) <span class="comment">//返回"[object Object]"</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span>+[]  <span class="comment">//返回"1"</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>先调用<code>valueOf()</code>方法返回自身，不是原始值，再调用<code>toString()</code>方法，返回””，是原始值，不会被强制转换为数字，而是直接使用””,所以结果为”1”</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1&lt;new Date() //返回true</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span>&lt;<span class="keyword">new</span> <span class="built_in">Date</span>() <span class="comment">//返回true</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>先调用<code>valueOf()</code>返回自1970年1月1日以来的毫秒数，为原始值，直接使用，比1大，所以为true.</p>
 </blockquote>
@@ -583,7 +583,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -592,7 +592,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -601,7 +601,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
