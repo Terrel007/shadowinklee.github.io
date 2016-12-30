@@ -105,14 +105,14 @@
 <meta name="description" content="JavaScrip中的数据类型分为两类：原始类型(primitive type)和对象类型(object type)。
 原始类型包括数字(number),字符串(string),布尔值(boolean),null,undefined。对象类型包括普通对象和内置对象(包装对象String,Number,Boolean;Array,Function,Date,RegExp,全局对象Math,JSON)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript Type">
+<meta property="og:title" content="JavaScript中的类型转换">
 <meta property="og:url" content="http://yoursite.com/2016/12/30/JavaScript-Type/index.html">
 <meta property="og:site_name" content="Alvin's Bolg">
 <meta property="og:description" content="JavaScrip中的数据类型分为两类：原始类型(primitive type)和对象类型(object type)。
 原始类型包括数字(number),字符串(string),布尔值(boolean),null,undefined。对象类型包括普通对象和内置对象(包装对象String,Number,Boolean;Array,Function,Date,RegExp,全局对象Math,JSON)">
-<meta property="og:updated_time" content="2016-12-30T02:07:32.648Z">
+<meta property="og:updated_time" content="2016-12-30T04:09:33.124Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript Type">
+<meta name="twitter:title" content="JavaScript中的类型转换">
 <meta name="twitter:description" content="JavaScrip中的数据类型分为两类：原始类型(primitive type)和对象类型(object type)。
 原始类型包括数字(number),字符串(string),布尔值(boolean),null,undefined。对象类型包括普通对象和内置对象(包装对象String,Number,Boolean;Array,Function,Date,RegExp,全局对象Math,JSON)">
 
@@ -127,8 +127,8 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
-      author: '博主'
+      userId: '6369714133889189000',
+      author: '博主 (Alvin)'
     },
     algolia: {
       applicationID: '',
@@ -148,7 +148,7 @@
 
 
 
-  <title> JavaScript Type | Alvin's Bolg </title>
+  <title> JavaScript中的类型转换 | Alvin's Bolg </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -219,16 +219,6 @@
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
           </a>
         </li>
       
@@ -305,7 +295,7 @@
             
             
               
-                JavaScript Type
+                JavaScript中的类型转换
               
             
           </h1>
@@ -331,8 +321,40 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">技术笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/12/30/JavaScript-Type/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/30/JavaScript-Type/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -357,11 +379,11 @@
 
       
         <p>JavaScrip中的数据类型分为两类：原始类型(primitive type)和对象类型(object type)。</p>
-<p>原始类型包括数字(number),字符串(string),布尔值(boolean),null,undefined。<br>对象类型包括普通对象和内置对象(包装对象String,Number,Boolean;Array,Function,Date,RegExp,全局对象Math,JSON)。</p>
+<p>原始类型包括数字(number),字符串(string),布尔值(boolean),null,undefined。<br>对象类型包括普通对象和内置对象(包装对象String,Number,Boolean;Array,Function,Date,RegExp,全局对象Math,JSON)。<br><a id="more"></a></p>
 <h3 id="原始值到原始值的转换"><a href="#原始值到原始值的转换" class="headerlink" title="原始值到原始值的转换"></a>原始值到原始值的转换</h3><ol>
 <li>undefined,null,0,-0,NaN,””转换为布尔值结果为false,称为falsy value.所有其他值，包括对象都会被转换为true,称为truthy value。</li>
 <li>true转换为number时，结果为1,false和空字符串””转换为number时，结果为0。</li>
-<li>数字表示的字符串可以直接转换为数字，也允许在开始和结尾处带有空格，但是开始和结尾处的任意非空字符都不被当成数字直接量的一部分，进而造成字符串转换为数字的结果为NAN。</li>
+<li>数字表示的字符串可以直接转换为数字，也允许在开始和结尾处带有空格，但是开始和结尾处的任意非空字符都不被当成数字直接量的一部分，进而造成字符串转换为数字的结果为NaN。</li>
 </ol>
 <h3 id="原始值到对象的转换"><a href="#原始值到对象的转换" class="headerlink" title="原始值到对象的转换"></a>原始值到对象的转换</h3><ol>
 <li>null和undefined在期望是一个对象的地方都会造成一个类型错误(TypeError)异常，而不会执行正常的转换。</li>
@@ -384,22 +406,22 @@
 <p>“&lt;”,”!=”等关系运算符应用到对象到原始值的转换时，任何对象都会首先尝试调用<code>valueOf()</code>，然后调用<code>toString()</code>。不管得到的原始值是否直接使用，它都不会进一步被转换成数字或字符串。</p>
 <p>“-“运算符把它的两个操作数都转换为数字。</p>
 <p><strong>示例:</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">[]+&#123;&#125; <span class="comment">//返回"[object Object]"</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[]+&#123;&#125; //返回&quot;[object Object]&quot;</div></pre></td></tr></table></figure>
 <blockquote>
-<p>[]调用valueOf()方法返回[]本身，不是原始值，调用toString()返回””,<br>{}调用valueOf()方法返回{}本身，不是原始值，调用toString()返回”[object Object]”</p>
+<p>[]调用<code>valueOf()</code>方法返回[]本身，不是原始值，调用<code>toString()</code>返回””,<br>{}调用<code>valueOf()</code>方法返回{}本身，不是原始值，调用<code>toString()</code>返回”[object Object]”</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&#123;&#125;+[] <span class="comment">//返回0</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&#125;+[] //返回0</div></pre></td></tr></table></figure>
 <blockquote>
-<p>{}被JavaScript引擎解析为语句块，因此表达式相当于+[],将[]操作数转换为数字，先调用valueOf()方法返回自身，不是原始值，再调用toString()方法，返回””，是原始值，转换为数字类型为0。</p>
+<p>{}被JavaScript引擎解析为语句块，因此表达式相当于+[],将[]操作数转换为数字，先调用<code>valueOf()</code>方法返回自身，不是原始值，再调用<code>toString()</code>方法，返回””，是原始值，转换为数字类型为0。</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">(&#123;&#125;+[]) <span class="comment">//返回"[object Object]"</span></div></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="number">1</span>+[]  <span class="comment">//返回"1"</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(&#123;&#125;+[]) //返回&quot;[object Object]&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1+[]  //返回&quot;1&quot;</div></pre></td></tr></table></figure>
 <blockquote>
-<p>先调用valueOf()方法返回自身，不是原始值，再调用toString()方法，返回””，是原始值，不会被强制转换为数字，而是直接使用””,所以结果为”1”</p>
+<p>先调用<code>valueOf()</code>方法返回自身，不是原始值，再调用<code>toString()</code>方法，返回””，是原始值，不会被强制转换为数字，而是直接使用””,所以结果为”1”</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="number">1</span>&lt;<span class="keyword">new</span> <span class="built_in">Date</span>() <span class="comment">//返回true</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1&lt;new Date() //返回true</div></pre></td></tr></table></figure>
 <blockquote>
-<p>先调用valueOf()返回自1970年1月1日以来的毫秒数，为原始值，直接使用，比1大，所以为true.</p>
+<p>先调用<code>valueOf()</code>返回自1970年1月1日以来的毫秒数，为原始值，直接使用，比1大，所以为true.</p>
 </blockquote>
 
       
@@ -456,6 +478,25 @@
 
     <div class="post-spread">
       
+        <div class="ds-share flat" data-thread-key="2016/12/30/JavaScript-Type/"
+     data-title="JavaScript中的类型转换"
+     data-content=""
+     data-url="http://yoursite.com/2016/12/30/JavaScript-Type/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
     </div>
   </div>
 
@@ -466,6 +507,10 @@
 
           
   <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/12/30/JavaScript-Type/"
+           data-title="JavaScript中的类型转换" data-url="http://yoursite.com/2016/12/30/JavaScript-Type/">
+      </div>
     
   </div>
 
@@ -517,6 +562,13 @@
             </div>
           
 
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -695,20 +747,39 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"alvintech"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
-	
 
 
-
-
-
-  
 
 
 
